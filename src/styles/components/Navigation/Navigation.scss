@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1460px;
+  height: 60px;
+  user-select: none;
+  background-color: $background-color-main;
+  border-bottom: 1px solid $border-color-main;
+
+  .profile img {
+    display: block;
+    width: 34px;
+    margin-right: 150px;
+    height: 34px;
+    user-select: none;
+    border-radius: 50%;
+  }
+
+  .navigation {
+    width: 700px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+
+    .logo {
+      margin-left: 150px;
+      display: block;
+      width: 26px;
+      height: 30px;
+
+      img {
+        width: 26px;
+        height: 30px;
+      }
+    }
+
+    .nav-link {
+      &.active {
+        color: $active-color-main;
+      }
+
+      margin-left: 50px;
+      text-decoration: none;
+      font-weight: 500;
+      color: $text-color-main;
+      font-size: 14px;
+    }
+  }
+}

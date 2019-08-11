@@ -1,0 +1,88 @@
+.marketplace-item {
+  display: inline-block;
+  width: 367px;
+  margin-bottom: 29px;
+
+  &:not(:nth-child(3n)) {
+    margin-right: 29px;
+  }
+
+  height: 371px;
+  user-select: none;
+  background-color:$background-color-main;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 16px 0px,
+  rgba(0, 0, 0, 0.08) 0px 0px 1px 0px;
+
+  .cover {
+    width: 367px;
+    height: 240px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 16px 16px 0px 0px;
+
+    img {
+      align-self: center;
+      width: 100%;
+    }
+  }
+
+  .reach {
+    display: flex;
+    align-items: center;
+    height: 53px;
+
+  }
+
+  .description {
+    display: flex;
+    border-bottom: 1px solid $border-color-main;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        tab-size: 4;
+        margin-bottom: 5px;
+        margin-top: 0;
+        font-weight: 700;
+        font-size: 16px;
+        height: 16px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 280px;
+        overflow: hidden;
+      }
+
+      .reward {
+        height: 16px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 280px;
+        overflow: hidden;
+        font-weight: 200;
+        -webkit-text-fill-color: $text-color-secondary;
+        font-size: 12px;
+        line-height: 1.2;
+      }
+    }
+
+    .logo {
+      display: flex;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      user-select: none;
+      overflow: hidden;
+
+      img {
+        align-self: center;
+        width: 100%;
+      }
+    }
+  }
+}

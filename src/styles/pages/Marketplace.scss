@@ -1,0 +1,19 @@
+.marketplace-content {
+  padding: 0 150px;
+
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+
+    .title {
+      tab-size: 4;
+      font-weight: 700;
+      -webkit-text-fill-color: hsl(0, 0%, 0%);
+      font-size: 28px;
+      letter-spacing: -0.2px;
+      line-height: 1;
+    }
+  }
+}
